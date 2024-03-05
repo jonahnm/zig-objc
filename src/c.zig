@@ -1,8 +1,3 @@
-pub usingnamespace @cImport({
-    @cInclude("objc/runtime.h");
-    @cInclude("objc/message.h");
-});
-
 /// This is a funky helper to help with the fact that some macOS
 /// SDKs have an i8 return value for bools and some have stdbool.
 pub fn boolResult(comptime Fn: type, result: anytype) bool {
